@@ -1,0 +1,43 @@
+header {
+  position: absolute;
+  z-index: 3;
+  left: 9%;
+  top: 8%;
+  .header-logo {
+    h1 {
+      font-size: 2em;
+      font-family: $font-oswald;
+      font-weight: 700;
+    }
+    a {
+      color: $color-white;
+      span {
+        color: $color-pink;
+      }
+    }
+  }
+}
+
+.header-nav-bar {
+  font-family: $font-nunito-sans;
+  margin-left: 500px;
+  ul {
+    li {
+      padding: 10px 5px;
+      &:first-of-type a {
+        color: $color-white;
+      }
+
+      a {
+        padding: 10px;
+        letter-spacing: 0.05em;
+        font-size: 18px;
+        color: $color-nav-bar;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

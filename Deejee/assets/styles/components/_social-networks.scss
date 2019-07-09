@@ -1,0 +1,29 @@
+.social-networks {
+  &-full {
+    background-color: $color-pink;
+    a {
+      text-align: $text-center;
+      padding: 20px 0px;
+      color: $color-white;
+      i {
+        font-size: 18px;
+      }
+      &:hover {
+        background-color: $color-pink-hover;
+        transition: 0.3s linear;
+      }
+    }
+  }
+  &-mini {
+    margin-top: 20px;
+    a {
+      color: $color-footor-nav;
+      padding-right: 30px;
+      font-size: 18px;
+      &:hover {
+        color: $color-white;
+        transition: 0.3s linear;
+      }
+    }
+  }
+}
