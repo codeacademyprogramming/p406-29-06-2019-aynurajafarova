@@ -1,0 +1,26 @@
+.btn-primary {
+  cursor: $pointer;
+  background-color: $color-pink;
+  color: $color-white;
+  padding: 20px 24px;
+  font-family: $font-nunito-sans;
+  border-radius: 5px;
+  &:hover {
+    background-color: $color-pink-hover;
+    transition: all 0.3s linear;
+  }
+}
+
+.dots {
+  padding: 30px;
+  .dot {
+    width: 28px;
+    height: 4px;
+    background-color: $color-dots;
+    margin-right: 12px;
+    cursor: $pointer;
+  }
+  .active-dot {
+    background-color: $color-pink;
+  }
+}

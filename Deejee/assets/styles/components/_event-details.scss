@@ -1,0 +1,29 @@
+.event {
+    box-sizing: border-box;
+    padding: 15px;
+    a {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    &-details {
+      background-color: $color-white;
+      padding: 12px;
+      line-height: $line-height;
+    }
+    &-date {
+      color: $color-black;
+      text-transform: $uppercase;
+      font-size: 15px;
+      color: $color-event-date;
+    }
+    &-name {
+      font-size: 20px;
+      margin-bottom: 10px;
+      a {
+        color: $color-pink;
+      }
+    }
+  }
+  

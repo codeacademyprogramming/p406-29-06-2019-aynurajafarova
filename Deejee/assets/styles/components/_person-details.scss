@@ -1,0 +1,60 @@
+.person {
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 10px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    background-color: rgba(227, 32, 123, 0.8);
+    height: 92%;
+    width: 93%;
+    opacity: 0;
+    z-index: 1;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+      transition: 0.2s linear;
+    }
+    .person-details {
+      opacity: 1;
+      // @include transform(translateY(-30%));
+      transform: translateY(-30%);
+      transition: 0.4s linear;
+    }
+  }
+  &-details {
+    position: absolute;
+    top: 40%;
+    text-align: $text-center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: $color-white;
+    opacity: 0;
+    z-index: 3;
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    p {
+      box-sizing: border-box;
+      padding: 18px;
+      line-height: $line-height;
+    }
+  }
+  &-social {
+    a {
+      color: $color-white;
+      padding-left: 10px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
